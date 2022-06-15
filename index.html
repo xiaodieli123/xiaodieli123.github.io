@@ -1,0 +1,15 @@
+let dataServer;
+let pubKey = "pub-c-3159d193-2899-4f93-8d53-86eb91705a6c";
+let subKey = "sub-c-13108136-5d0b-4b4b-8066-2a8f38e25cdb";
+let secretKey = "sec-c-ZWI1OGZiNGMtYmVjYi00ZjVjLWI2OTctYTYyOWEzMDA2ZmY0";
+
+dataServer = new PubNub({
+    subscribeKey: subKey,
+    publishKey: pubKey,
+    uuid: "Your Name Here",
+    secretKey: secretKey,
+    heartbeatInterval: 0,
+  });
+
+
+
